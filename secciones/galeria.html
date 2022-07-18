@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Galeria</title>
 </head>
@@ -36,31 +37,31 @@
         <!-- galeria con 9 imagenes y tres videos -->
             <h1 class="titulo">Galeria</h1>
         <div class="gridGaleria">
-            <div class="foto1 estiloFoto">
+            <div data-aos="fade-up" class="foto1 estiloFoto">
                 <img src="../img/galeria1.jpeg" alt="">
             </div>
-            <div class="foto2 estiloFoto">
+            <div data-aos="fade-up" class="foto2 estiloFoto">
                 <img src="../img/galeria2.jpg" alt="">
             </div>
-            <div class="foto3 estiloFoto">
+            <div data-aos="fade-up" class="foto3 estiloFoto">
                 <img src="../img/galeria3.jpg" alt="">
             </div>
-            <div class="foto4 estiloFoto">
+            <div data-aos="flip-left" class="foto4 estiloFoto">
                 <img src="../img/galeria4.jpg" alt="">
             </div>
-            <div class="foto5 estiloFoto">
+            <div data-aos="flip-left" class="foto5 estiloFoto">
                 <img src="../img/galeria5.jpg" alt="">
             </div>
-            <div class="foto6 estiloFoto">
+            <div data-aos="flip-left" class="foto6 estiloFoto">
                 <img src="../img/galeria6.jpg" alt="">
             </div>
-            <div class="foto7 estiloFoto">
+            <div data-aos="zoom-in-left" class="foto7 estiloFoto">
                 <img src="../img/galeria7.jpg" alt="">
             </div>
-            <div class="foto8 estiloFoto">
+            <div data-aos="zoom-in-left" class="foto8 estiloFoto">
                 <img src="../img/galeria8.jpg" alt="">
             </div>
-            <div class="foto9 estiloFoto">
+            <div data-aos="zoom-in-left" class="foto9 estiloFoto">
                 <img src="../img/galeria9.jpg" alt="">
             </div>
             <!--<div class="video1">
@@ -77,6 +78,9 @@
         <a href="https://www.reddit.com/r/diabloimmortal" target="_blank">Reddit</a>
         <a href="https://www.facebook.com/Diablo.eu" target="_blank">Facebook</a>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
