@@ -10,7 +10,7 @@ parrafos de letra grande: #FFFFFFB3, parrafos chicos #FFFF*/
     margin: 0;
     padding: 0;
 }
-/*grilla index*/
+/*grilla index
 .grilla{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,7 +23,7 @@ parrafos de letra grande: #FFFFFFB3, parrafos chicos #FFFF*/
     "footer footer footer";
     gap: 20px;
 }
-
+*/
 body{
     background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
     background-position: center;
@@ -34,29 +34,7 @@ header{
 }
 /*
 
-.logo{
-    width: 15%;
-    margin-left: 30px;
-}
-
-
-.menuheader ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menuheader ul li{
-    list-style-type: none;
-    margin: 0 20px;
-}
-
-.menuheader ul li a{
-    color: #FFFFFFB3;
-    text-decoration: none;
-}*/
-/*aca comienza el banner*/
+/*aca comienza el banner
 .banner{
     grid-area: banner;
     display: flex;
@@ -69,6 +47,39 @@ header{
 }
 .banner img{
     width: 70%;
+}*/
+#banner{
+    min-height: 100vh;
+    position: relative;
+}
+.logobanner{
+    padding-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
 }
 /*contenido del html*/
 .titulo{
