@@ -82,38 +82,13 @@ header{
     mix-blend-mode: overlay;
 }
 /*contenido del html*/
-.titulo{
-    grid-area: titulo;
-    text-align: center;
+h1{
     font-family: 'Roboto', sans-serif;
     color: #D7AB6D;
 }
-
-.subtitulo{
-    grid-area: subtitulo;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFFB3;
-    font-size: 20px;
+h2{
     font-family: 'Cinzel', serif;
-}
-
-.texto{
-    grid-area: texto;
-    text-align: center;
     color: #FFFFFFB3;
-    font-size: 20px;
-    margin-left: 20px;
-}
-
-.video{
-    grid-area: video;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 40px;
 }
 /*footer*/
 footer{

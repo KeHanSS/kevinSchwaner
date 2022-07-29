@@ -44,22 +44,34 @@
         <img class="img" src="./img/di_masthead_desktop-2600.jpg" alt="banner/img">
         <div class="capa"></div>
         </main>
+        <section class="grid">
         <!-- primera seccion pequeña info del juego -->
-        <h1 class="titulo">Info del juego</h1>
-        
-        <!-- aca se intentare posicionar el texto al lado del video -->
-        <div class="subtitulo estiloVideo">
-        <h2>MATA DEMONIOS DONDEQUIERA QUE ESTÉS</h2>
-        </div>
-        <div class="texto estiloVideo">
-        <p>Lucha contra males ancestrales y desvela la historia de los sucesos transcurridos entre Diablo II y Diablo III en este nuevo RPG de acción multijugador masivo en línea desarrollado para móvil, pero con beta abierta también disponible próximamente en PC.
-        </p>
-        </div>
-        
-        <div class="video estiloVideo">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_sDxsXYn78w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        </div>
+        <div class="container">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row">
+              <div class="col-12 text-center mt-3">
+                <h1>Info del juego</h1>
+            </div>
+            </div>
+          
+            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+            <div class="row">
+              <div class="col-12 text-center">
+                <h2>MATA DEMONIOS DONDEQUIERA QUE ESTÉS</h2>
+              </div>
+            </div>
+          
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-xl-12 mt-3 text-center">
+                <p>Lucha contra males ancestrales y desvela la historia de los sucesos transcurridos entre Diablo II y Diablo III en este nuevo RPG de acción multijugador masivo en línea desarrollado para móvil, pero con beta abierta también disponible próximamente en PC.
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-12 col-xl-12 ratio ratio-4x3">
+                <iframe src="https://www.youtube.com/embed/_sDxsXYn78w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
     <!-- footer de la pagina con links a las redes sociales y web de la empresa -->
     <footer>
         <a href="https://www.blizzard.com/es-es/" target="_blank">Blizzard</a>
