@@ -1,0 +1,387 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Roboto:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
+  background-position: center;
+}
+
+#banner {
+  min-height: 100vh;
+  position: relative;
+}
+
+.logobanner {
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+/*contenido del html*/
+h1 {
+  font-family: "font-family: 'Roboto', sans-serif";
+  color: #D7AB6D;
+}
+
+h2 {
+  font-family: "font-family: 'Cinzel', serif";
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+body {
+  background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
+  background-position: center;
+}
+
+/*Grilla de historia*/
+.gridHistoria {
+  display: grid;
+  grid-template-columns: repeat 1fr;
+  grid-template-areas: "tituloH" "parrafoVideo" "encuentros" "leoric" "leoric2" "carruaje" "carruaje2" "condesa" "condesa2" "fahir" "fahir2" "ball" "ball2" "coloso" "coloso2";
+  gap: 50px;
+}
+
+.tituloH {
+  grid-area: tituloH;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 20px;
+  color: #D7AB6D;
+}
+
+.parrafoVideo {
+  grid-area: parrafoVideo;
+}
+
+.parrafoVideo p {
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Cinzel', serif";
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+.parrafoVideo iframe {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 30%;
+  width: 40%;
+  height: 60%;
+}
+
+.encuentros {
+  grid-area: encuentros;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 20px;
+  color: #D7AB6D;
+}
+
+section div p {
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Cinzel', serif";
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.leoric {
+  grid-area: leoric;
+  display: flex;
+  flex-direction: column;
+}
+
+.leoric2 {
+  grid-area: leoric2;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 3em;
+  color: #D7AB6D;
+}
+
+.condesa {
+  grid-area: condesa;
+}
+
+.condesa2 {
+  grid-area: condesa2;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 3em;
+  color: #D7AB6D;
+}
+
+.fahir {
+  grid-area: fahir;
+}
+
+.fahir2 {
+  grid-area: fahir2;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 3em;
+  color: #D7AB6D;
+}
+
+.baal {
+  grid-area: ball;
+}
+
+.baal2 {
+  grid-area: ball2;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 3em;
+  color: #D7AB6D;
+}
+
+.coloso {
+  grid-area: coloso2;
+}
+
+.coloso2 {
+  grid-area: coloso2;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 3em;
+  color: #D7AB6D;
+}
+
+.carruaje {
+  grid-area: carruaje;
+}
+
+.carruaje2 {
+  grid-area: carruaje2;
+  text-align: center;
+  align-items: center;
+  font-family: "font-family: 'Roboto', sans-serif";
+  font-size: 3em;
+  color: #D7AB6D;
+}
+
+body {
+  background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
+  background-position: center;
+}
+
+/*html clases*/
+.grillaClases {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "clases" "barbaro" "cruzada" "cazadora" "monje" "nigromante" "maga";
+  gap: 20px;
+}
+
+.clases {
+  grid-area: clases;
+}
+
+.clases h1 {
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  color: #D7AB6D;
+}
+
+.barbaro {
+  grid-area: barbaro;
+}
+
+.cruzada {
+  grid-area: cruzada;
+}
+
+.cazadora {
+  grid-area: cazadora;
+}
+
+.monje {
+  grid-area: monje;
+}
+
+.nigromante {
+  grid-area: nigromante;
+}
+
+.maga {
+  grid-area: maga;
+}
+
+main div p {
+  align-items: center;
+  font-family: "font-family: 'Cinzel', serif";
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+body {
+  background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
+  background-position: center;
+}
+
+/*comienza grilla de galeria*/
+.gridGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
+  gap: 20px;
+}
+
+.estiloFoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estiloFoto img {
+  width: 80%;
+}
+
+.foto1 {
+  grid-area: foto1;
+}
+
+.foto2 {
+  grid-area: foto2;
+}
+
+.foto3 {
+  grid-area: foto3;
+}
+
+.foto4 {
+  grid-area: foto4;
+}
+
+.foto5 {
+  grid-area: foto5;
+}
+
+.foto6 {
+  grid-area: foto6;
+}
+
+.foto7 {
+  grid-area: foto7;
+}
+
+.foto8 {
+  grid-area: foto8;
+}
+
+.foto9 {
+  grid-area: foto9;
+}
+
+body {
+  background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
+  background-position: center;
+}
+
+/*primera medida para tablet*/
+@media screen and (max-width: 768px) {
+  /*index*/
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "banner banner" "titulo titulo" "subtitulo subtitulo" "texto video" "footer footer";
+  }
+  .menuheader ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*Galeria*/
+  .gridGaleria {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(50% 50%);
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "foto9 foto9";
+  }
+}
+/*segunda medida para mobile pequeños*/
+@media screen and (max-width: 320px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "header" "banner" "titulo" "subtitulo" "texto" "video" "footer";
+  }
+  .video {
+    grid-area: video;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9";
+  }
+}/*# sourceMappingURL=style.css.map */

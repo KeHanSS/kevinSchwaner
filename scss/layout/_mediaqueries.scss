@@ -1,0 +1,70 @@
+/*primera medida para tablet*/
+@media screen and (max-width: 768px){
+    /*index*/
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header"
+        "banner banner"
+        "titulo titulo"
+        "subtitulo subtitulo"
+        "texto video"
+        "footer footer";
+        }
+
+        .menuheader ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*Galeria*/
+
+        .gridGaleria{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(50% 50%);
+            grid-template-areas: 
+            "foto1 foto2"
+            "foto3 foto4"
+            "foto5 foto6"
+            "foto7 foto8"
+            "foto9 foto9";
+        }
+}
+/*segunda medida para mobile pequeños*/
+@media screen and (max-width: 320px){
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-areas: 
+        "header"
+        "banner"
+        "titulo"
+        "subtitulo"
+        "texto"
+        "video"
+        "footer";
+        }
+
+        .video{
+            grid-area: video;
+            justify-content: center;
+            align-items: center;
+        }
+        .gridGaleria{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8"
+            "foto9";
+        }
+}

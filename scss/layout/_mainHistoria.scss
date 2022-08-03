@@ -1,0 +1,158 @@
+body{
+    background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
+    background-position: center;
+}
+/*Grilla de historia*/
+
+.gridHistoria{
+    display: grid;
+    grid-template-columns: repeat 1fr;
+    grid-template-areas: 
+    "tituloH"
+    "parrafoVideo"
+    "encuentros"
+    "leoric"
+    "leoric2"
+    "carruaje"
+    "carruaje2"
+    "condesa"
+    "condesa2"
+    "fahir"
+    "fahir2"
+    "ball"
+    "ball2"
+    "coloso"
+    "coloso2";
+    gap: 50px;
+}
+
+.tituloH{
+    grid-area: tituloH;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 20px;
+    color: $colorTitulo;
+}
+
+.parrafoVideo{
+    grid-area: parrafoVideo;
+}
+.parrafoVideo p{
+    text-align: center;
+    align-items: center;
+    font-family: $textos;
+    font-size: 26px;
+    color: $colorTexto;
+}
+.parrafoVideo iframe{
+    display: flex;
+
+    margin-top: 10px;
+    margin-left: 30%;
+    width: 40%;
+    height: 60%;
+}
+
+.encuentros{
+    grid-area: encuentros;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 20px;
+    color: $colorTitulo;
+}
+section div p{
+        text-align: center;
+    align-items: center;
+    font-family: $textos;
+    font-size: 26px;
+    color: $colorTexto;
+}
+section img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.leoric{
+    grid-area: leoric;
+    display: flex;
+    flex-direction: column;
+}
+
+.leoric2{
+    grid-area: leoric2;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 3em;
+    color: $colorTitulo;
+}
+
+.condesa{
+    grid-area: condesa;
+}
+
+.condesa2{
+    grid-area: condesa2;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 3em;
+    color: $colorTitulo;
+}
+
+.fahir{
+    grid-area: fahir;
+}
+
+.fahir2{
+    grid-area: fahir2;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 3em;
+    color: $colorTitulo;
+}
+
+.baal{
+    grid-area: ball;
+}
+
+.baal2{
+    grid-area: ball2;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 3em;
+    color: $colorTitulo;
+}
+
+.coloso{
+    grid-area: coloso2;
+}
+
+.coloso2{
+    grid-area: coloso2;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 3em;
+    color: $colorTitulo;
+    }
+
+.carruaje{
+    grid-area: carruaje;
+}
+
+.carruaje2{
+    grid-area: carruaje2;
+    text-align: center;
+    align-items: center;
+    font-family: $titulo;
+    font-size: 3em;
+    color: $colorTitulo;
+}

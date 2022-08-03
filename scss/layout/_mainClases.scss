@@ -1,0 +1,60 @@
+body{
+    background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
+    background-position: center;
+}
+/*html clases*/
+
+.grillaClases{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "clases"
+    "barbaro"
+    "cruzada"
+    "cazadora"
+    "monje"
+    "nigromante"
+    "maga";
+    gap: 20px;
+}
+.clases{
+    grid-area: clases;
+}
+.clases h1{
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: $colorTitulo;
+}
+
+.barbaro{
+    grid-area: barbaro;
+}
+
+.cruzada{
+    grid-area: cruzada;
+}
+
+.cazadora{
+    grid-area: cazadora;
+}
+
+.monje{
+    grid-area: monje;
+}
+
+.nigromante{
+    grid-area: nigromante;
+}
+
+.maga{
+    grid-area: maga;
+}
+
+main div p{
+    align-items: center;
+    font-family: $textos;
+    font-size: 26px;
+    color: $colorTexto;
+}
