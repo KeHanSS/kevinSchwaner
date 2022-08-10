@@ -85,11 +85,7 @@ section img{
 
 .leoric2{
     grid-area: leoric2;
-    text-align: center;
-    align-items: center;
-    font-family: $titulo;
-    font-size: 3em;
-    color: $colorTitulo;
+    @include tituloHistoria1;
 }
 
 .condesa{
@@ -98,11 +94,7 @@ section img{
 
 .condesa2{
     grid-area: condesa2;
-    text-align: center;
-    align-items: center;
-    font-family: $titulo;
-    font-size: 3em;
-    color: $colorTitulo;
+    @include tituloHistoria1;
 }
 
 .fahir{
@@ -111,11 +103,7 @@ section img{
 
 .fahir2{
     grid-area: fahir2;
-    text-align: center;
-    align-items: center;
-    font-family: $titulo;
-    font-size: 3em;
-    color: $colorTitulo;
+    @include tituloHistoria1;
 }
 
 .baal{
@@ -124,11 +112,7 @@ section img{
 
 .baal2{
     grid-area: ball2;
-    text-align: center;
-    align-items: center;
-    font-family: $titulo;
-    font-size: 3em;
-    color: $colorTitulo;
+    @include tituloHistoria1;
 }
 
 .coloso{
@@ -137,11 +121,7 @@ section img{
 
 .coloso2{
     grid-area: coloso2;
-    text-align: center;
-    align-items: center;
-    font-family: $titulo;
-    font-size: 3em;
-    color: $colorTitulo;
+    @include tituloHistoria1;
     }
 
 .carruaje{
@@ -150,9 +130,5 @@ section img{
 
 .carruaje2{
     grid-area: carruaje2;
-    text-align: center;
-    align-items: center;
-    font-family: $titulo;
-    font-size: 3em;
-    color: $colorTitulo;
+    @include tituloHistoria1;
 }
