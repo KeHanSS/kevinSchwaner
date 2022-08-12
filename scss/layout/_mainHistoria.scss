@@ -2,59 +2,103 @@ body{
     background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
     background-position: center;
 }
-/*Grilla de historia*/
+/*Historia*/
 
-.gridHistoria{
-    display: grid;
-    grid-template-columns: repeat 1fr;
-    grid-template-areas: 
-    "tituloH"
-    "parrafoVideo"
-    "encuentros"
-    "leoric"
-    "leoric2"
-    "carruaje"
-    "carruaje2"
-    "condesa"
-    "condesa2"
-    "fahir"
-    "fahir2"
-    "ball"
-    "ball2"
-    "coloso"
-    "coloso2";
-    gap: 50px;
+.mainHistoria {
+    @include flexColumn;
+    @include tablet {
+        flex-flow: wrap;
+    }
+    @include desktop {
+        flex-flow: wrap;
+    }
+}
+.historiaTitulo {
+    @include tituloHistoria1;
+    $padding-interno: 1.25rem;
+    $width: 100%;
+    width: $width;
+    padding: $padding-interno;
+    margin: 1rem auto;
+    & h1 {
+        font-family: $titulo;
+        color: $colorTitulo;
+    }
+    & p {
+        font-family: $textos;
+        font-size: 2rem;
+        color: $colorTexto;
+    }
+}
+.historiaIframe {
+    @include flexColumn;
+    width: 100%;
+    & iframe {
+        width: 70%;
+        margin: auto;
+    }
+}
+.encuentrosTitulo {
+    @include tituloHistoria1;
+    width: 100%;
+    margin: auto 1.5rem;
 }
 
-.tituloH{
-    grid-area: tituloH;
+.boss{
+    $padding-interno: 1.25rem;
+    $width: 460px;
+    width: $width;
+    padding: $padding-interno;
+    margin: 1rem auto;
+    &Img {
+        width: 100%;
+        & img {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    &Info {
+        padding: $padding-interno;
+        & h3 {
+            font-family: $titulo;
+            color: $colorTitulo;
+        }
+        & p {
+            font-family: $textos;
+            color: $colorTexto;
+        }
+    }
+}
+
+
+
+/*    grid-area: tituloH;
     text-align: center;
     align-items: center;
     font-family: $titulo;
     font-size: 20px;
     color: $colorTitulo;
-}
 
-.parrafoVideo{
-    grid-area: parrafoVideo;
-}
-.parrafoVideo p{
+
+
+
+
     text-align: center;
     align-items: center;
     font-family: $textos;
     font-size: 26px;
     color: $colorTexto;
-}
-.parrafoVideo iframe{
+
+
     display: flex;
 
     margin-top: 10px;
     margin-left: 30%;
     width: 40%;
-    height: 60%;
-}
+    height: 60%;/*
 
-.encuentros{
+
+/*.encuentros{
     grid-area: encuentros;
     text-align: center;
     align-items: center;
@@ -69,66 +113,4 @@ section div p{
     font-size: 26px;
     color: $colorTexto;
 }
-section img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.leoric{
-    grid-area: leoric;
-    display: flex;
-    flex-direction: column;
-}
-
-.leoric2{
-    grid-area: leoric2;
-    @include tituloHistoria1;
-}
-
-.condesa{
-    grid-area: condesa;
-}
-
-.condesa2{
-    grid-area: condesa2;
-    @include tituloHistoria1;
-}
-
-.fahir{
-    grid-area: fahir;
-}
-
-.fahir2{
-    grid-area: fahir2;
-    @include tituloHistoria1;
-}
-
-.baal{
-    grid-area: ball;
-}
-
-.baal2{
-    grid-area: ball2;
-    @include tituloHistoria1;
-}
-
-.coloso{
-    grid-area: coloso2;
-}
-
-.coloso2{
-    grid-area: coloso2;
-    @include tituloHistoria1;
-    }
-
-.carruaje{
-    grid-area: carruaje;
-}
-
-.carruaje2{
-    grid-area: carruaje2;
-    @include tituloHistoria1;
-}
+*/

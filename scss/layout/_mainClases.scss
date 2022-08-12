@@ -4,57 +4,53 @@ body{
 }
 /*html clases*/
 
-.grillaClases{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "clases"
-    "barbaro"
-    "cruzada"
-    "cazadora"
-    "monje"
-    "nigromante"
-    "maga";
-    gap: 20px;
+.mainClases{
+    @include flexColumn;
+    @include tablet {
+        flex-flow: wrap;
+    }
+    @include desktop {
+        flex-flow: wrap;
+    }
+    @include desktop2 {
+        flex-flow: wrap;
+    }
 }
+.clasesTitulo {
+    @include tituloHistoria1;
+    width: 100%;
+    & h1 {
+        font-family: $titulo;
+        color: $colorTitulo;
+    }
+    & p {
+        font-family: $textos;
+        color: $colorTexto;
+    }
+}
+
 .clases{
-    grid-area: clases;
-}
-.clases h1{
-    text-align: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
-    color: $colorTitulo;
-}
-
-.barbaro{
-    grid-area: barbaro;
-}
-
-.cruzada{
-    grid-area: cruzada;
-}
-
-.cazadora{
-    grid-area: cazadora;
-}
-
-.monje{
-    grid-area: monje;
-}
-
-.nigromante{
-    grid-area: nigromante;
-}
-
-.maga{
-    grid-area: maga;
-}
-
-main div p{
-    align-items: center;
-    font-family: $textos;
-    font-size: 26px;
-    color: $colorTexto;
+    $padding-interno: 1.25rem;
+    $width: 460px;
+    width: $width;
+    padding: $padding-interno;
+    margin: 1rem auto;
+    &Img {
+        width: 100%;
+        & img {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    &Info {
+        padding: $padding-interno;
+        & h3 {
+            font-family: $titulo;
+            color: $colorTitulo;
+        }
+        & p {
+            font-family: $textos;
+            color: $colorTexto;
+        }
+    }
 }

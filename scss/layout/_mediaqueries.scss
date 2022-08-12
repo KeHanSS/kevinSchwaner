@@ -1,5 +1,22 @@
 /*primera medida para tablet*/
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: 1080px) {
+        @content;
+    }
+}
+@mixin desktop2 {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
 @media screen and (max-width: 768px){
+
     /*index*/
     .grilla{
         display: grid;
@@ -34,7 +51,7 @@
         }
 }
 /*segunda medida para mobile pequeños*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 576px){
     .grilla{
         display: grid;
         grid-template-columns: repeat(1fr);

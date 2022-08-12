@@ -2,7 +2,8 @@ body{
     background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
     background-position: center;
 }
-#banner{
+/*#banner{
+    width: 100%;
     min-height: 100vh;
     position: relative;
 }
@@ -34,13 +35,24 @@ body{
     background: #1c1c1d;
     opacity: 0.5;
     mix-blend-mode: overlay;
-}
+}*/
 /*contenido del html*/
+.bannerImg{
+    width: 100%;
+    & img {
+        width: 100%;
+    }
+}
 h1{
     font-family: $titulo;
     color: $colorTitulo;
 }
-h2{
+.h2{
     font-family: $textos;
     color: $colorTexto;
+}
+.text-center{
+    & p {
+        color: $colorTexto;
+    }
 }

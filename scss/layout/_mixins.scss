@@ -2,6 +2,13 @@
     text-align: center;
     align-items: center;
     font-family: $titulo;
-    font-size: 3em;
+    font-size: 2em;
     color: $colorTitulo;
+}
+
+@mixin flexColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }

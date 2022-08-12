@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Blizzard, Diablo, Franquicia, Video Games, contacto">
-    <meta name="description" content="Descubre mas sobre Blizzard Entertainment y su franquicia de Diablo.">
+    <meta name="description" content="Inicia sesion para no perderte ninguna de las novedades de Diablo Immortal.">
+    <link rel="icon" href="../img/iconoDiablo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/style.css">
-    <title>Nosotros</title>
+    <title>Inicio sesion</title>
 </head>
 <body>
     <header>
@@ -30,52 +31,44 @@
                 <a class="nav-link" href="./galeria.html">Galeria</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./aboutUs.html">About Us</a>
+                <a class="nav-link" href="./inicioSesion.html">Iniciar Sesion</a>
             </li>
             </ul>
         </div>
         </div>
     </nav>
     </header>
-    <main>
-        <section class="formulario">
-            <form action="#">
-				<input type="text" placeholder="DECIME TU NOMBRE"><br>
-				<label for="email">Decime tu email:
-					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
-				</label>
-				<label for="Observaciones"> Observaciones:<br>
-					<textarea placeholder="Observaciones"></textarea>
-				</label> <br>
-				<input type="number" placeholder="DECIME TU EDAD"><br>
-				<div><p>Elegí un lado:</p>
-					<div>Izquierda
-						<input type="radio" name="lado" value="izquierda">
-					</div>
-					<div>Derecha
-						<input type="radio" name="lado" value="derecha">
-					</div>
-				</div>
-				<p>Que letra te gusta mas?</p>
-				<select name="letra" id="letra"> 
-					<option value="x">X</option>
-					<option value="y">Y</option>
-					<option value="z">Z</option>
-				</select>
-				<div>Queres recibir info sobre nosotros?
-				<input type="checkbox" name="acepta" value="1"></div>
-				<input type="submit" value="PASAME LA DATA">
-				<input type="reset" value="RESETEAR">
-			</form>
-        </section>
+    <main class="mainContacto">
+        <form class="form">
+            <h2 class="formTitle">Inicia Sesión</h2>
+            <p class="formParrafo">No tienes cuenta? <a href="#" class="formLink">Registrarse</a></p>
 
+            <div class="formContainer">
+                <div class="formGroup">
+                    <input type="text" id="name" class="formInput" placeholder=" ">
+                    <label for="name" class="formLabel">Nombre</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGroup">
+                    <input type="text" id="user" class="formInput" placeholder=" ">
+                    <label for="user" class="formLabel">Usuario</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGroup">
+                    <input type="text" id="password" class="formInput" placeholder=" ">
+                    <label for="password" class="formLabel">Contraseña</label>
+                    <span class="formLine"></span>
+                </div>
+            </div>
+            <input type="submit" class="formSubmit" value="Entrar">
+        </form>
     </main>
     <!-- footer de la pagina con links a las redes sociales y web de la empresa -->
     <footer>
-        <a href="https://www.blizzard.com/es-es/" target="_blank">Blizzard</a>
-        <a href="https://twitter.com/Diablo_ES" target="_blank">Twitter</a>
-        <a href="https://www.reddit.com/r/diabloimmortal" target="_blank">Reddit</a>
-        <a href="https://www.facebook.com/Diablo.eu" target="_blank">Facebook</a>
+        <a href="https://www.blizzard.com/es-es/" target="_blank"><img src="../img/bliz.png" alt="Blizzard"></a>
+        <a href="https://twitter.com/Diablo_ES" target="_blank"><img src="../img/twitter.png" alt="Twitter"></a>
+        <a href="https://www.reddit.com/r/diabloimmortal" target="_blank"><img src="../img/reddit.png" alt="Reddit"></a>
+        <a href="https://www.facebook.com/Diablo.eu" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

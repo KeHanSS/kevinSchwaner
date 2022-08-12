@@ -2,3 +2,107 @@ body{
     background-image: url(../img/Stone-Relief-BG_Desktop_2600.jpg);
     background-position: center;
 }
+
+.mainContacto{
+    font-family: $titulo;
+    color: black;
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    display: flex;
+    min-height: 100vh;
+}
+
+.form {
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+.formTitle {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.formParrafo{
+    font-weight: 300;
+}
+.formLink {
+    font-weight: 400;
+    color: black;
+}
+
+.fomrContainer {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.formGroup {
+    color: #5757577e;
+    position: relative;
+
+}
+
+.formInput {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e;
+    font-family: $titulo;
+}
+
+.formInput:focus + .formLabel,
+.formInput:not(:placeholder-shown) + .formLabel{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2;
+}
+
+.formLabel {
+    color: #5757577e;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.formSubmit {
+    background: #3866f2;
+    color: white;
+    font-family: $textos;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 2rem;
+
+    padding: .8em 4em;
+    border: none;
+    border-radius: .5em;
+}
+
+.formLine {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.formInput:focus ~ .formLabel,
+.formInput:not(:placeholder-shown) ~ .formLabel{
+    transform: scale(1);
+}
