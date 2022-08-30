@@ -12,16 +12,46 @@ body{
     "foto4 foto5 foto6"
     "foto7 foto8 foto9";
     gap: 20px;
+    @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8"
+            "foto9";
+        }
+    @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "foto1 foto2"
+            "foto3 foto4"
+            "foto5 foto6"
+            "foto7 foto8"
+            "foto9 foto9";
+    }
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "foto1 foto2 foto3"
+        "foto4 foto5 foto6"
+        "foto7 foto8 foto9";
+    }
 }
 
 .estiloFoto{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3em;
 }
 
 .estiloFoto img{
-    width: 80%;
+    width: 90%;
 }
 
 .foto1{
@@ -54,8 +84,10 @@ body{
 
 .foto8{
     grid-area: foto8;
+
 }
 
 .foto9{
     grid-area: foto9;
+
 }
