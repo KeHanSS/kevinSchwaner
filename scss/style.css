@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Roboto:ital@0;1&display=swap");
 * {
   margin: 0;
@@ -6,32 +5,6 @@
 }
 
 /*primera medida para tablet*/
-@media screen and (max-width: 768px) {
-  /*index*/
-  .grilla {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "banner banner" "titulo titulo" "subtitulo subtitulo" "texto video" "footer footer";
-  }
-  .menuheader ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-/*segunda medida para mobile pequeños*/
-@media screen and (min-width: 576px) {
-  .grilla {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-areas: "header" "banner" "titulo" "subtitulo" "texto" "video" "footer";
-  }
-  .video {
-    grid-area: video;
-    justify-content: center;
-    align-items: center;
-  }
-}
 header {
   background-color: black;
 }
@@ -62,6 +35,17 @@ body {
 }
 .bannerImg img {
   width: 100%;
+}
+
+.video {
+  display: flex;
+  width: 100%;
+  margin-bottom: 3em;
+}
+.video iframe {
+  height: 80%;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
