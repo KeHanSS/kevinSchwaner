@@ -225,6 +225,15 @@ body {
   background-position: center;
 }
 
+.tituloG {
+  font-family: "font-family: 'Roboto', sans-serif";
+  color: #D7AB6D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
 /*comienza grilla de galeria*/
 .gridGaleria {
   display: grid;
